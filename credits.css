@@ -1,0 +1,57 @@
+/* #credits = <div id="credits">, .credits = <div class="credits"> */
+
+/* em = relativ enhet, om föräldern är font-size: 12px, så är em = 12px. Alltså 2em = 24px. */
+
+/* rem = root-relativ enhet, om body är font-size 14px,
+så är rem = 14px, alltså 2rem = 28px */
+
+#credits {
+  position: fixed;
+  max-width: 100vw;
+  padding-left:130px;
+  left:0;
+  text-align: left;
+  transform: translateX(0);
+  transition: transform 400ms ease-in-out, opacity 600ms ease-in;
+  z-index:10;
+ 
+}
+
+body:not(.show-credits) #credits {
+  transform:translateX(-100%);
+  opacity:0;
+}
+
+
+#disclaimer {
+  position: fixed;
+  max-width: 50vw;
+  padding-left:130px;
+  left:0;
+  text-align: left;
+  transform: translateX(0);
+  transition: transform 400ms ease-in-out, opacity 600ms ease-in;
+  z-index:10;
+}
+
+body:not(.show-disclaimer) #disclaimer {
+  transform:translateX(-100%);
+  opacity:0;
+}
+
+
+#instructions {
+  position: fixed;
+  max-width: 50vw;
+  padding-left:130px;
+  left:0;
+  text-align: left;
+  transform: translateX(0);
+  transition: transform 400ms ease-in-out, opacity 600ms ease-in;
+  z-index:10;
+}
+
+body:not(.show-instructions) #instructions {
+  transform:translateX(-100%);
+  opacity:0;
+}

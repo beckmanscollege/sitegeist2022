@@ -1,0 +1,26 @@
+#form {
+  position: absolute;
+  right: 15vw; /* jonas */
+  width: 50%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: ghostwhite;
+  border-radius: 8px;
+  margin-bottom: -80px;
+  z-index: 2; /* jonas */
+}
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}

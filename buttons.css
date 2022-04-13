@@ -1,0 +1,52 @@
+button {
+  cursor: pointer;
+}
+
+
+#buttons {
+  position: fixed;
+  width:100px;
+  left:0;
+  margin:1rem;
+  top:50%;
+  height:300px;
+  transform: translateY(-50%);
+  z-index:30;
+  
+}
+
+#buttons button {
+  width:100%;
+  padding:2rem;
+  background-color: ghostwhite;
+  mix-blend-mode: difference;
+  color: black;  
+}
+
+#buttons button:not(last-of-type){
+  margin-bottom:1rem;
+}
+
+#buttons button:hover {
+  background-color:Mistyrose;
+  color:white;
+}
+
+#buttons button:active {
+  background-color:Mistyrose;
+  color:white;
+}
+
+.active {
+  background-color: none;
+}
+
+
+
+body:not(.show-disclaimer) #disclaimer {
+  display:none;
+}
+
+body:not(.show-instruction) #instruction {
+  display:none;
+}

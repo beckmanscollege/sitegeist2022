@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="buttons.css" />
+    <link rel="stylesheet" href="credits.css" />
+    <link rel="stylesheet" href="form.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+      <div id="form">
+        <form
+          action="https://formspree.io/f/xwkyreao"
+          method="POST"
+          id="my-form"
+        >
+          <div class="form-group">
+            <label for="firstName"> Name</label>
+            <input type="text" id="firstName" name="firstName" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div id="status"></div>
+
+      <div id="buttons">
+        <button data-show="instructions">?</button>
+        <button data-show="disclaimer">*</button>
+        <button data-show="credits">@</button>
+      </div>
+
+      <aside>
+        <div id="instructions">Build a bridge between the present and the future by writing a digital letter to your future self (or someone else)! Simply fill in your name (or an alias) and the email-adress of your intended recipient, write your letter and the message will arrive ten years from now in the recipients inbox.
+</div>
+        
+        
+        <div id="disclaimer">* Your message will be partially handled by a human fyi. Maybe you’d like to send the digital postman a message directly, to which they would happily reply to in 10 years time. 
+          If not, your message will simply arrive to its intended recipient 10 years from now.
+        </div> 
+        
+        <div id="credits">
+          
+          <div class="webring">
+            This site is part of the
+            <a href="https://worldwidewebring.club">FUTURE Webring</a> based on
+            the
+            <a href="https://en.wikipedia.org/wiki/Eternalism_(philosophy_of_time)"
+              >WoT Wikipedia article</a
+            >.<br /><br />
+            <a href="http://http://howuc.it/"><b>←</b></a>
+            <a href="http://tickto.cc/"><b>→</b></a>
+            <br />
+            <br />
+          
+          </div>
+        </div>
+      </aside>
+
+    <video
+      autoplay
+      muted
+      playsinline
+      loop
+      src="https://cdn.glitch.me/87128390-aa90-4c06-8a42-e54abe210122/Comp%206%20(1).mp4?v=1649842651475"
+    ></video>
+  </body>
+</html>
